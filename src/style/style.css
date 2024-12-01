@@ -95,6 +95,21 @@
   font-size: 40px;
 }
 
+.header {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+  justify-content: center;
+}
+.header > h3 {
+  text-align: center;
+  font-family: "Anton";
+  font-weight: 400;
+  font-size: 20px;
+}
+
 .swiper {
   width: 240px;
   height: 320px;
@@ -103,14 +118,35 @@
 .swiper-slide-active > div {
   background: white !important;
 }
-.swiper-slide-active > div * {
-  color: #363636;
-}
 .swiper-slide-active > .zavrsen {
   background: #363636 !important;
 }
 .swiper-slide-active > .zavrsen * {
   color: white;
+}
+
+#tip1 * {
+  color: #ff00a6;
+}
+
+#tip2 * {
+  color: #EC0004 !important;
+}
+
+#tip3 * {
+  color: #A900EC !important;
+}
+
+#tip4 * {
+  color: #004FEC !important;
+}
+
+#tip5 * {
+  color: #128F1F !important;
+}
+
+#tip6 * {
+  color: #000000 !important;
 }
 
 .swiper-slide {
@@ -136,10 +172,11 @@
 }
 .swiper-slide h2 {
   width: 80%;
-  margin-top: 20px;
+  margin-top: 5px;
   font-family: "Anton";
   font-weight: 400;
   font-size: 25px;
+  text-align: center;
 }
 
 .odabir {
