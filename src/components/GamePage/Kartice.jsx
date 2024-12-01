@@ -7,6 +7,7 @@ import { EffectCards } from 'swiper/modules';
 import pitanja from "../../assets/pitanja.json"
 import Timer from "../../components/Timer";
 import Kartica from './Kartica';
+import { useEffect, useState } from 'react';
 
 
 function Kartice({ tip }) {
@@ -40,6 +41,11 @@ function Kartice({ tip }) {
 		},
 	}
 
+	function promesana(niz) {
+		let promesan = niz.sort(() => Math.random() - 0.5)
+		return promesan
+	}
+
 	return (
 		<div className='kartice'>
 			<h1>{uzrecice[tip].gore}</h1>
@@ -56,7 +62,7 @@ function Kartice({ tip }) {
 					swiper.allowTouchMove = true;
 				}}
 			>
-				{pitanja[tip].map((pitanje) => {
+				{promesana(pitanja[tip]).map((pitanje) => {
 					return <>
 						<SwiperSlide>
 							<Kartica tip={tip} pitanje={pitanje}></Kartica>
