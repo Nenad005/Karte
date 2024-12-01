@@ -26,7 +26,7 @@ const Timer = ({ zavrsen, setZavrsen }) => {
   return (
     <div>
       <div id="zapocni" onClick={startTimer}>
-        {isActive ? (count > 0 ? <>{count}</> : <>Gotovo</>) : <>"Pokreni Timer"</>}
+        {isActive ? (count > 0 ? <>{count}</> : <>Gotovo</>) : <>Pokreni Timer</>}
       </div>
     </div>
   );

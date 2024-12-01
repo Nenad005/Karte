@@ -34,7 +34,7 @@ function HomePage(){
                 <KarticaTip tip={"10 je ali"} izabrana={izabrana} setIzabrana={setIzabrana}></KarticaTip>
                 <KarticaTip tip={"3 za 5"} izabrana={izabrana} setIzabrana={setIzabrana}></KarticaTip>
             </div>
-            <Link  className="link" style={{background: state() == "kraj" ? "#FF5400" : "#363636", pointerEvents: state() == "kraj" ? "all" : "none"}} to={`/game/${izabrana}`}>Zapocni igru</Link>
+            <Link  className="link" style={{background: state() == "kraj" ? "#FF5400" : "#363636", pointerEvents: state() == "kraj" ? "all" : "none"}} to={`/game/${izabrana}`}>Započni igru</Link>
         </div>
     </>
 }

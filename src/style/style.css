@@ -199,6 +199,7 @@
   flex-direction: column;
   gap: 20px;
   width: 100%;
+  margin-top: 30px;
   align-items: center;
 }
 .odabir .izbor-kartica #izabrana {
@@ -207,7 +208,7 @@
 }
 .odabir .izbor-kartica .kartica-tip {
   padding-block: 10px;
-  width: 400px;
+  width: 350px;
   background: #FF5400;
   display: flex;
   border-radius: 30px;
