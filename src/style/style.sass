@@ -32,7 +32,7 @@
     justify-content: space-between
     flex-direction: column
     width: 100vw
-    height: 100vh
+    height: 100dvh
     align-items: center
 
 .pocetna-slika
@@ -91,6 +91,16 @@
     width: 240px
     height: 320px
 
+.swiper-slide-active
+    > div
+        background: white !important
+        *
+            color: #363636
+    > .zavrsen
+        background: #363636 !important
+        *
+            color: white
+
 .swiper-slide
     display: flex
     align-items: center
@@ -106,13 +116,16 @@
         flex-direction: column
         justify-content: space-between
         align-items: center
+        transition: all 500ms ease-in
+    > .zavrsen 
+        background: #363636
         
     h2
         width: 80%
         margin-top: 20px
         font-family: "Anton"
         font-weight: 400
-        font-size: 30px
+        font-size: 25px
 
 .odabir
     width: 100%

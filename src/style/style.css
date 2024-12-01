@@ -35,7 +35,7 @@
   justify-content: space-between;
   flex-direction: column;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   align-items: center;
 }
 
@@ -100,6 +100,19 @@
   height: 320px;
 }
 
+.swiper-slide-active > div {
+  background: white !important;
+}
+.swiper-slide-active > div * {
+  color: #363636;
+}
+.swiper-slide-active > .zavrsen {
+  background: #363636 !important;
+}
+.swiper-slide-active > .zavrsen * {
+  color: white;
+}
+
 .swiper-slide {
   display: flex;
   align-items: center;
@@ -116,13 +129,17 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  transition: all 500ms ease-in;
+}
+.swiper-slide > .zavrsen {
+  background: #363636;
 }
 .swiper-slide h2 {
   width: 80%;
   margin-top: 20px;
   font-family: "Anton";
   font-weight: 400;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .odabir {
