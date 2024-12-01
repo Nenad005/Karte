@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap')
+
+*
+    margin: 0
+    padding: 0
+    color: white
+
+
+#root
+    background: #020036
+
+.game-wrapper
+    display: flex
+    flex-direction: column
+    width: 100vw
+    height: 100vh
+    justify-content: space-between
+    align-items: center
+    h1
+        font-family: "Anton"
+        font-weight: 400
+    > .kartice
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        margin-bottom: 20px
+        align-items: center
+    
+.pocetak
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    width: 100vw
+    height: 100vh
+    align-items: center
+
+.pocetna-slika
+    height: 50%
+
+.pocetniTekst
+    font-family: "Anton"
+    font-weight: 400
+    height: 150px
+    width: 70vw
+    font-size: 80px
+    line-height: 96px
+    text-align: center
+    display: flex
+    justify-content: center
+    align-items: center
+    > #breaker
+        position: absolute
+        transform: translateX(20px) translateY(60px)
+        -webkit-text-stroke-width: 1px
+        color: transparent
+        -webkit-text-stroke-color: #FF5400 !important
+    > #silence
+        position: absolute
+        transform: translateX(-25px)
+        color: #FF5400 !important
+
+.mali-logo
+    display: flex
+
+    #mala-slika
+        // margin-top: 30px
+        margin-right: 20px
+        height: 240px
+        width: 120px
+        // aspect-ratio: 2/1        
+
+.pocni
+    margin-bottom: 40px
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #FF5400 !important
+    color: white
+    width: 40vw
+    height: 20vw
+    border-radius: 50px
+    font-family: "Anton"
+
+    >h1
+        color: #020036
+        letter-spacing: 3px
+        font-size: 40px
+
+.swiper
+    width: 240px
+    height: 320px
+
+.swiper-slide
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 18px
+    font-size: 22px
+    font-weight: bold
+    color: white
+    > div 
+        height: 100%
+        background: #FF5400
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        
+    h2
+        width: 80%
+        margin-top: 20px
+        font-family: "Anton"
+        font-weight: 400
+        font-size: 30px
+
+.odabir
+    width: 100%
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: start
+    align-items: center
+
+    > h1
+        font-family: "Anton"
+        font-weight: 400
+
+        
+    .izbor-kartica
+        height: calc(100% - 70px)
+        // background: red
+        overflow-y: scroll
+        overflow-x: visible
+        display: flex
+        flex-direction: column
+        gap: 20px
+        width: 100%
+        align-items: center
+        #izabrana
+            transform: scale(1.05)
+            background: #ce4501
+        .kartica-tip
+            padding-block: 10px
+            width: 400px
+            background: #FF5400
+            display: flex
+            border-radius: 30px
+            align-items: center
+            transition: all 300ms
+            img
+                height: 100px
+                width: 100px
+                object-fit: fill
+                margin-inline: 10px
+                
+            h2
+                font-family: "Anton"
+                font-weight: 400
+                letter-spacing: 2px
+                
+    .link
+        margin-top: auto
+        height: 150px
+        margin-block: 20px
+        background: #FF5400
+        width: 300px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-size: 40px
+        font-family: "Anton"
+        text-decoration: none
+        font-weight: 400
+        border-radius: 30px
+
+.mala-slika
+    width: "100px"
+    height: "100px"
+    borderRadius: "10px"
+#zapocni
+    height: 100px
+    width: 200px
+    display: flex
+    justify-content: center
+    align-items: center 
+    font-size: 31px
+    font-family: "Anton"
+    text-decoration: none
+    font-weight: 400
+    border-radius: 30px
